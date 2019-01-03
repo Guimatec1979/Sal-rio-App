@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edtFuncionario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/n_mero_do_funcion_rio"
+            android:inputType="number"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtHoras_trabalhadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/horas_trabalhadas"
+            android:inputType="number"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtValorHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/valor_hora_trabalhada"
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULAR"
+            android:textSize="18sp" />
+
+        <view
+            class="android.support.v4.view.ViewPager"
+            id="@+id/view"
+            android:layout_marginTop="40dp"
+            android:background="#808080"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp" />
+
+        <TextView
+            android:id="@+id/txtNumeroFuncionario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Número Funcionário: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtSalario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Salário: "
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
